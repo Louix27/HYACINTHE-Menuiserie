@@ -55,7 +55,9 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+
   }
+
   article {
     font-size: 1rem;
   }
@@ -99,5 +101,40 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+/* === PAGE D’ACCUEIL MOBILE === */
+@media (max-width: 768px) {
+  #profile {
+    display: flex;               /* <<< indispensable pour réactiver le flex */
+    flex-direction: column;
+    justify-content: center;     /* centre verticalement */
+    align-items: center;         /* centre horizontalement */
+    min-height: 100svh;          /* meilleure unité sur mobile */
+    height: auto;                /* on laisse min-height gérer */
+    margin-bottom: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .section__text {
+    max-width: 90%;
+  }
+  .title1 { font-size: 2rem; }
+  .section__text__p2 { font-size: 1.2rem; }
+  .btn-container { justify-content: center; }
+
+  #offres .title {
+    text-align: center;           /* centre le texte */
+    width: 100%;                  /* s'assure qu'il prend toute la largeur */
+    display: block;
+    margin: 0 auto 1.5rem auto;   /* centre et ajoute un peu d'espace en bas */
+    line-height: 1.2;             /* évite que les deux lignes soient trop espacées */
+  }
+
+  /* On réduit aussi les marges du conteneur */
+  #offres {
+    margin: 0 1rem;               /* évite que la section pousse le titre à gauche */
   }
 }
