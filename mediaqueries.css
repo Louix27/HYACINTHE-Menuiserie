@@ -16,6 +16,8 @@
   #desktop-nav {
     display: none;
   }
+  body{ padding-top: 0; }
+
   #hamburger-nav {
     display: flex;
   }
