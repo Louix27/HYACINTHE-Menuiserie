@@ -205,7 +205,9 @@
     transition: transform 0.25s ease, opacity 0.25s ease, right 0.25s ease;
   }
 
-
+  @media (max-width: 1200px){
+    body { padding-top: 0; }
+  }
 
   /* Overlay + bottom-sheet */
   .mobile-menu[hidden]{ display:none; }
