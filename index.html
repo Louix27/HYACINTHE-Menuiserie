@@ -1,421 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HYACINTHE menuiserie</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body>
-<nav id="desktop-nav">
-  <div class="logo">
-    <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
-  </div>
-  <div>
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#offres">Mes services</a></li>
-      <li><a href="#projects">Galerie</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-<nav id="hamburger-nav">
-  <div class="logo">
-    <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
-  </div>
-
-  <button
-          class="hamburger-btn"
-          id="hamburgerBtn"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          aria-label="Ouvrir le menu"
-  >
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
-  </button>
-
-  <!-- Menu mobile (bottom-sheet) -->
-  <div id="mobileMenu" class="mobile-menu" hidden>
-    <div class="mobile-backdrop" data-close></div>
-
-    <nav class="mobile-sheet" role="dialog" aria-modal="true">
-      <div class="sheet-header">
-        <div class="logo">
-          <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYACINTHE menuiserie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
       </div>
-
-      <ul class="sheet-links">
-        <li><a href="#about"    data-close>À propos</a></li>
-        <li><a href="#offres"   data-close>Mes services</a></li>
-        <li><a href="#projects" data-close>Galerie</a></li>
-        <li><a href="#contact"  data-close>Contact</a></li>
-      </ul>
-
-      <button class="btn btn-color-1 sheet-cta" data-close onclick="location.href='#contact'">
-        Contactez-moi
-      </button>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#offres">Mes services</a></li>
+          <li><a href="#projects">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </div>
-</nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
+      </div>
 
-
-<section id="profile">
-  <!--<div class="section__pic-container">
-    <img src="./assets/profile-pic.png" alt="Louis Palié profile picture" />
-  </div>-->
-  <div class="section__text">
-    <!--<p class="section__text__p1">Bonjour, I'm</p>-->
-    <h1 class="title1">Expert en menuiserie sur mesure</h1>
-    <p class="section__text__p2">Tradition, savoir-faire et qualité pour tous vos projets bois, PVC et aluminium.</p>
-    <div class="btn-container">
-      <!-- <button
-         class="btn btn-color-2"
-         onclick="window.open('./assets/resume-example.pdf')"
-       >
-         Download CV
-       </button>-->
-      <button class="btn btn-color-1" onclick="location.href='./#contact'">
-        Contactez-moi
+      <button
+              class="hamburger-btn"
+              id="hamburgerBtn"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+              aria-label="Ouvrir le menu"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </button>
-    </div>
 
-  </div>
-</section>
-<section id="about">
-  <!-- <p class="section__text__p1" >Apprenez-en davantage</p>-->
-  <h1 class="title">À propos</h1>
-  <div class="section-container">
-    <div class="section__pic-container">
-      <img
-              src="./assets/porte.jpg"
-              alt="Profile picture"
-              class="about-pic"
-      />
-    </div>
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-          />
-          <h3>Experience</h3>
-          <p>30+ ans <br />Menuiserie</p>
+      <!-- Menu mobile (bottom-sheet) -->
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <div class="mobile-backdrop" data-close></div>
+
+        <nav class="mobile-sheet" role="dialog" aria-modal="true">
+          <div class="sheet-header">
+            <div class="logo">
+              <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
+            </div>
+          </div>
+
+          <ul class="sheet-links">
+            <li><a href="#about"    data-close>À propos</a></li>
+            <li><a href="#offres"   data-close>Mes services</a></li>
+            <li><a href="#projects" data-close>Galerie</a></li>
+            <li><a href="#contact"  data-close>Contact</a></li>
+          </ul>
+
+          <button class="btn btn-color-1 sheet-cta" data-close onclick="location.href='#contact'">
+            Contactez-moi
+          </button>
+        </nav>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+      <!--<div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Louis Palié profile picture" />
+      </div>-->
+      <div class="section__text">
+        <!--<p class="section__text__p1">Bonjour, I'm</p>-->
+        <h1 class="title1">Expert en menuiserie sur mesure</h1>
+        <p class="section__text__p2">Tradition, savoir-faire et qualité pour tous vos projets bois, PVC et aluminium.</p>
+        <div class="btn-container">
+          <!-- <button
+             class="btn btn-color-2"
+             onclick="window.open('./assets/resume-example.pdf')"
+           >
+             Download CV
+           </button>-->
+           <button class="btn btn-color-1" onclick="location.href='./#contact'">
+             Contactez-moi
+           </button>
+         </div>
+
+       </div>
+     </section>
+     <section id="about">
+      <!-- <p class="section__text__p1" >Apprenez-en davantage</p>-->
+       <h1 class="title">À propos</h1>
+       <div class="section-container">
+         <div class="section__pic-container">
+           <img
+             src="./assets/logo.jpeg"
+             alt="Profile picture"
+             class="about-pic"
+           />
+         </div>
+         <div class="about-details-container">
+           <div class="about-containers">
+             <div class="details-container">
+               <img
+                 src="./assets/experience.png"
+                 alt="Experience icon"
+                 class="icon"
+               />
+               <h3>Experience</h3>
+               <p>30+ ans <br />Menuiserie</p>
+             </div>
+             <div class="details-container">
+               <img
+                 src="./assets/education.png"
+                 alt="Education icon"
+                 class="icon"
+               />
+               <h3>Nombres de salariés</h3>
+               <p>4</p>
+             </div>
+           </div>
+           <div class="text-container">
+             <p>
+               Chez HYACINTHE Menuiserie , nous mettons notre savoir-faire et notre passion au service de vos projets de menuiserie, qu'ils soient résidentiels ou commerciaux. Spécialisés dans la conception, la fabrication et l'installation de menuiseries sur mesure, nous vous offrons des solutions adaptées à vos besoins, votre style et votre budget.<br><br>
+
+               Que vous souhaitiez installer des fenêtres, des portes, des portails, des volets, ou encore des vérandas, nous proposons une large gamme de produits de haute qualité. Nos menuiseries sont fabriquées avec des matériaux durables et résistants, garantissant sécurité, confort et esthétique pour votre intérieur ou extérieur.<br><br>
+               Vous avez un projet en tête ? Nous sommes à votre écoute pour le concrétiser. Que ce soit pour une rénovation, une construction neuve ou un aménagement sur mesure, HYACINTHE menuiserie vous garantit des résultats à la hauteur de vos attentes.<br><br>
+               Demandez votre devis gratuit dès aujourd'hui et découvrez la différence que peut apporter une menuiserie de qualité !
+
+             </p>
+           </div>
+         </div>
+       </div>
+       <img
+         src="./assets/arrow.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./#offres'"
+       />
+     </section>
+    <section id="offres">
+      <h1 class="title">Mes services</h1>
+      <div class="offres-container">
+        <div class="offre-card">
+          <h1>🧱</h1>
+          <h2>Menuiserie intérieure</h2>
+          <p>
+            Aménagement & confort sur mesure.<br>
+            Je conçois, fabrique et pose vos éléments intérieurs pour un rendu esthétique et fonctionnel :
+          </p><br>
+          <ul>
+            <li>✔️ Portes intérieures, placards, dressings</li>
+            <li>✔️ Escaliers, rampes et garde-corps</li>
+            <li>✔️ Meubles sur mesure (rangements, bibliothèques, etc.)</li>
+            <li>✔️ Habillages et finitions bois</li>
+          </ul><br>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contactez-moi
+          </button>
         </div>
-        <div class="details-container">
-          <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-          />
-          <h3>Nombres de salariés</h3>
-          <p>4</p>
+        <div class="offre-card">
+          <h1>🪟</h1>
+          <h2>Sécurité & isolation</h2><br>
+          <p>
+            Pose ou rénovation complète de vos menuiseries extérieures :
+          </p><br><br>
+          <ul>
+            <li>✔️ Fenêtres PVC, alu ou bois</li>
+            <li>✔️ Volets battants / roulants</li>
+            <li>✔️ Portes d’entrée et portes de garage</li>
+            <li>✔️ Portails, clôtures et bardages</li>
+          </ul><br><br>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contactez-moi
+          </button>
+        </div>
+        <div class="offre-card">
+          <h1>🧰</h1>
+          <h2>Rénovation & dépannage</h2><br>
+          <p>
+            Interventions sur vos menuiseries existantes :
+          </p><br><br>
+          <ul>
+            <li>✔️ Réparation de portes / fenêtres</li>
+            <li>✔️ Remplacement de quincaillerie, serrures, vitrages</li>
+            <li>✔️ Modernisation de vos installations</li>
+          </ul><br><br>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contactez-moi
+          </button>
         </div>
       </div>
-      <div class="text-container">
-        <p>
-          Chez HYACINTHE Menuiserie , nous mettons notre savoir-faire et notre passion au service de vos projets de menuiserie, qu'ils soient résidentiels ou commerciaux. Spécialisés dans la conception, la fabrication et l'installation de menuiseries sur mesure, nous vous offrons des solutions adaptées à vos besoins, votre style et votre budget.<br><br>
+    </section>
+     <section id="projects">
+      <!-- <p class="section__text__p1">Browse My Recent</p>-->
 
-          Que vous souhaitiez installer des fenêtres, des portes, des portails, des volets, ou encore des vérandas, nous proposons une large gamme de produits de haute qualité. Nos menuiseries sont fabriquées avec des matériaux durables et résistants, garantissant sécurité, confort et esthétique pour votre intérieur ou extérieur.<br><br>
-          Vous avez un projet en tête ? Nous sommes à votre écoute pour le concrétiser. Que ce soit pour une rénovation, une construction neuve ou un aménagement sur mesure, HYACINTHE menuiserie vous garantit des résultats à la hauteur de vos attentes.<br><br>
-          Demandez votre devis gratuit dès aujourd'hui et découvrez la différence que peut apporter une menuiserie de qualité !
+       <h1 class="title">Galerie</h1>
 
-        </p>
+       <div class="gallery-container">
+         <div class="photo-gallery ligne1" >
+           <img src="./assets/photo1.jpg" alt="">
+           <img src="./assets/photo2.jpg" alt="">
+           <img src="./assets/photo3.jpg" alt="">
+           <img src="./assets/photo4.jpg" alt="">
+           <img src="./assets/photo5.jpg" alt="">
+           <img src="./assets/photo6.jpg" alt="">
+           <img src="./assets/photo7.jpg" alt="">
+           <img src="./assets/photo8.jpg" alt="">
+           <img src="./assets/photo9.jpg" alt="">
+           <img src="./assets/photo10.jpg" alt="">
+           <img src="./assets/photo21.jpg" alt="">
+           <img src="./assets/photo1.jpg" alt="">
+           <img src="./assets/photo2.jpg" alt="">
+           <img src="./assets/photo3.jpg" alt="">
+           <img src="./assets/photo4.jpg" alt="">
+           <img src="./assets/photo5.jpg" alt="">
+           <img src="./assets/photo6.jpg" alt="">
+           <img src="./assets/photo7.jpg" alt="">
+           <img src="./assets/photo8.jpg" alt="">
+           <img src="./assets/photo9.jpg" alt="">
+           <img src="./assets/photo10.jpg" alt="">
+           <img src="./assets/photo21.jpg" alt="">
+           <img src="./assets/photo1.jpg" alt="">
+           <img src="./assets/photo2.jpg" alt="">
+           <img src="./assets/photo3.jpg" alt="">
+           <img src="./assets/photo4.jpg" alt="">
+           <img src="./assets/photo5.jpg" alt="">
+           <img src="./assets/photo6.jpg" alt="">
+           <img src="./assets/photo7.jpg" alt="">
+           <img src="./assets/photo8.jpg" alt="">
+           <img src="./assets/photo9.jpg" alt="">
+           <img src="./assets/photo10.jpg" alt="">
+           <img src="./assets/photo21.jpg" alt="">
+           <img src="./assets/photo1.jpg" alt="">
+           <img src="./assets/photo2.jpg" alt="">
+           <img src="./assets/photo3.jpg" alt="">
+           <img src="./assets/photo4.jpg" alt="">
+           <img src="./assets/photo5.jpg" alt="">
+           <img src="./assets/photo6.jpg" alt="">
+           <img src="./assets/photo7.jpg" alt="">
+           <img src="./assets/photo8.jpg" alt="">
+           <img src="./assets/photo9.jpg" alt="">
+           <img src="./assets/photo10.jpg" alt="">
+           <img src="./assets/photo21.jpg" alt="">
+
+
+         </div>
+
+         <div class="photo-gallery ligne2" >
+           <img src="./assets/photo11.jpg" alt="">
+           <img src="./assets/photo12.jpg" alt="">
+           <img src="./assets/photo13.jpg" alt="">
+           <img src="./assets/photo14.jpg" alt="">
+           <img src="./assets/photo15.jpg" alt="">
+           <img src="./assets/photo16.jpg" alt="">
+           <img src="./assets/photo17.jpg" alt="">
+           <img src="./assets/photo18.jpg" alt="">
+           <img src="./assets/photo19.jpg" alt="">
+           <img src="./assets/photo20.jpg" alt="">
+           <img src="./assets/photo22.jpg" alt="">
+           <img src="./assets/photo11.jpg" alt="">
+           <img src="./assets/photo12.jpg" alt="">
+           <img src="./assets/photo13.jpg" alt="">
+           <img src="./assets/photo14.jpg" alt="">
+           <img src="./assets/photo15.jpg" alt="">
+           <img src="./assets/photo16.jpg" alt="">
+           <img src="./assets/photo17.jpg" alt="">
+           <img src="./assets/photo18.jpg" alt="">
+           <img src="./assets/photo19.jpg" alt="">
+           <img src="./assets/photo20.jpg" alt="">
+           <img src="./assets/photo22.jpg" alt=""><img src="./assets/photo11.jpg" alt="">
+           <img src="./assets/photo12.jpg" alt="">
+           <img src="./assets/photo13.jpg" alt="">
+           <img src="./assets/photo14.jpg" alt="">
+           <img src="./assets/photo15.jpg" alt="">
+           <img src="./assets/photo16.jpg" alt="">
+           <img src="./assets/photo17.jpg" alt="">
+           <img src="./assets/photo18.jpg" alt="">
+           <img src="./assets/photo19.jpg" alt="">
+           <img src="./assets/photo20.jpg" alt="">
+           <img src="./assets/photo22.jpg" alt=""><img src="./assets/photo11.jpg" alt="">
+           <img src="./assets/photo12.jpg" alt="">
+           <img src="./assets/photo13.jpg" alt="">
+           <img src="./assets/photo14.jpg" alt="">
+           <img src="./assets/photo15.jpg" alt="">
+           <img src="./assets/photo16.jpg" alt="">
+           <img src="./assets/photo17.jpg" alt="">
+           <img src="./assets/photo18.jpg" alt="">
+           <img src="./assets/photo19.jpg" alt="">
+           <img src="./assets/photo20.jpg" alt="">
+           <img src="./assets/photo22.jpg" alt="">
+         </div>
+         <script>
+           function setDistance(selector){
+             const container = document.querySelector('.gallery-container');
+             const track = document.querySelector(selector);
+             if(!container || !track) return;
+             const distance = track.scrollWidth - container.clientWidth;
+             track.style.setProperty('--distance', distance + 'px');
+           }
+           function refresh(){
+             setDistance('.ligne1');
+             setDistance('.ligne2');
+           }
+           window.addEventListener('load', refresh);
+           window.addEventListener('resize', refresh);
+         </script>
+
+       </div>
+
+       <img
+         src="./assets/arrow.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./#contact'"
+       />
+     </section>
+
+    <section id="contact">
+      <!--<p class="section__text__p1">Entrer en contact</p>-->
+      <h1 class="title">Contactez-Moi</h1>
+    <form id="contact-form" class="contact-form" action="#" method="post">
+      <div>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="from_name" required>
       </div>
-    </div>
-  </div>
-  <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#offres'"
-  />
-</section>
-<section id="offres">
-  <h1 class="title">Mes services</h1>
-  <div class="offres-container">
-    <div class="offre-card">
-      <h1>🧱</h1>
-      <h2>Menuiserie intérieure</h2>
-      <p>
-        Aménagement & confort sur mesure.<br>
-        Je conçois, fabrique et pose vos éléments intérieurs pour un rendu esthétique et fonctionnel :
-      </p><br>
-      <ul>
-        <li>✔️ Portes intérieures, placards, dressings</li>
-        <li>✔️ Escaliers, rampes et garde-corps</li>
-        <li>✔️ Meubles sur mesure (rangements, bibliothèques, etc.)</li>
-        <li>✔️ Habillages et finitions bois</li>
-      </ul><br>
-      <button class="btn btn-color-1" onclick="location.href='./#contact'">
-        Contactez-moi
-      </button>
-    </div>
-    <div class="offre-card">
-      <h1>🪟</h1>
-      <h2>Sécurité & isolation</h2><br>
-      <p>
-        Pose ou rénovation complète de vos menuiseries extérieures :
-      </p><br><br>
-      <ul>
-        <li>✔️ Fenêtres PVC, alu ou bois</li>
-        <li>✔️ Volets battants / roulants</li>
-        <li>✔️ Portes d’entrée et portes de garage</li>
-        <li>✔️ Portails, clôtures et bardages</li>
-      </ul><br><br>
-      <button class="btn btn-color-1" onclick="location.href='./#contact'">
-        Contactez-moi
-      </button>
-    </div>
-    <div class="offre-card">
-      <h1>🧰</h1>
-      <h2>Rénovation & dépannage</h2><br>
-      <p>
-        Interventions sur vos menuiseries existantes :
-      </p><br><br>
-      <ul>
-        <li>✔️ Réparation de portes / fenêtres</li>
-        <li>✔️ Remplacement de quincaillerie, serrures, vitrages</li>
-        <li>✔️ Modernisation de vos installations</li>
-      </ul><br><br>
-      <button class="btn btn-color-1" onclick="location.href='./#contact'">
-        Contactez-moi
-      </button>
-    </div>
-  </div>
-</section>
-<section id="projects">
-  <!-- <p class="section__text__p1">Browse My Recent</p>-->
+      <div>
+        <label for="phone">Numéro de téléphone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Facultatif">
+      </div>
+      <div>
+        <label for="email">Votre email:</label>
+        <input type="email" id="email" name="reply_to" required>
+      </div>
+      <div>
+        <label for="message">Votre message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-color-1">Envoyer</button>
+    </form>
 
-  <h1 class="title">Galerie</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:webbylouis1@gmail.com">hyacinthe.menuiseries@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+                  src="./assets/facebook.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+          />
+          <p><a href="https://www.facebook.com/hyacinthd.menuiseries">Facebook</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+                  src="./assets/telephone.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+          />
+          <p>Tel : 06 11 55 06 51</p>
+        </div>
+      </div>
+    </section>
+     <footer>
 
-  <div class="gallery-container">
-    <div class="photo-gallery ligne1" >
-      <img src="./assets/photo1.jpg" alt="">
-      <img src="./assets/photo2.jpg" alt="">
-      <img src="./assets/photo3.jpg" alt="">
-      <img src="./assets/photo4.jpg" alt="">
-      <img src="./assets/photo5.jpg" alt="">
-      <img src="./assets/photo6.jpg" alt="">
-      <img src="./assets/photo7.jpg" alt="">
-      <img src="./assets/photo8.jpg" alt="">
-      <img src="./assets/photo9.jpg" alt="">
-      <img src="./assets/photo10.jpg" alt="">
-      <img src="./assets/photo21.jpg" alt="">
-      <img src="./assets/photo1.jpg" alt="">
-      <img src="./assets/photo2.jpg" alt="">
-      <img src="./assets/photo3.jpg" alt="">
-      <img src="./assets/photo4.jpg" alt="">
-      <img src="./assets/photo5.jpg" alt="">
-      <img src="./assets/photo6.jpg" alt="">
-      <img src="./assets/photo7.jpg" alt="">
-      <img src="./assets/photo8.jpg" alt="">
-      <img src="./assets/photo9.jpg" alt="">
-      <img src="./assets/photo10.jpg" alt="">
-      <img src="./assets/photo21.jpg" alt="">
-      <img src="./assets/photo1.jpg" alt="">
-      <img src="./assets/photo2.jpg" alt="">
-      <img src="./assets/photo3.jpg" alt="">
-      <img src="./assets/photo4.jpg" alt="">
-      <img src="./assets/photo5.jpg" alt="">
-      <img src="./assets/photo6.jpg" alt="">
-      <img src="./assets/photo7.jpg" alt="">
-      <img src="./assets/photo8.jpg" alt="">
-      <img src="./assets/photo9.jpg" alt="">
-      <img src="./assets/photo10.jpg" alt="">
-      <img src="./assets/photo21.jpg" alt="">
-      <img src="./assets/photo1.jpg" alt="">
-      <img src="./assets/photo2.jpg" alt="">
-      <img src="./assets/photo3.jpg" alt="">
-      <img src="./assets/photo4.jpg" alt="">
-      <img src="./assets/photo5.jpg" alt="">
-      <img src="./assets/photo6.jpg" alt="">
-      <img src="./assets/photo7.jpg" alt="">
-      <img src="./assets/photo8.jpg" alt="">
-      <img src="./assets/photo9.jpg" alt="">
-      <img src="./assets/photo10.jpg" alt="">
-      <img src="./assets/photo21.jpg" alt="">
-
-
-    </div>
-
-    <div class="photo-gallery ligne2" >
-      <img src="./assets/photo11.jpg" alt="">
-      <img src="./assets/photo12.jpg" alt="">
-      <img src="./assets/photo13.jpg" alt="">
-      <img src="./assets/photo14.jpg" alt="">
-      <img src="./assets/photo15.jpg" alt="">
-      <img src="./assets/photo16.jpg" alt="">
-      <img src="./assets/photo17.jpg" alt="">
-      <img src="./assets/photo18.jpg" alt="">
-      <img src="./assets/photo19.jpg" alt="">
-      <img src="./assets/photo20.jpg" alt="">
-      <img src="./assets/photo22.jpg" alt="">
-      <img src="./assets/photo11.jpg" alt="">
-      <img src="./assets/photo12.jpg" alt="">
-      <img src="./assets/photo13.jpg" alt="">
-      <img src="./assets/photo14.jpg" alt="">
-      <img src="./assets/photo15.jpg" alt="">
-      <img src="./assets/photo16.jpg" alt="">
-      <img src="./assets/photo17.jpg" alt="">
-      <img src="./assets/photo18.jpg" alt="">
-      <img src="./assets/photo19.jpg" alt="">
-      <img src="./assets/photo20.jpg" alt="">
-      <img src="./assets/photo22.jpg" alt=""><img src="./assets/photo11.jpg" alt="">
-      <img src="./assets/photo12.jpg" alt="">
-      <img src="./assets/photo13.jpg" alt="">
-      <img src="./assets/photo14.jpg" alt="">
-      <img src="./assets/photo15.jpg" alt="">
-      <img src="./assets/photo16.jpg" alt="">
-      <img src="./assets/photo17.jpg" alt="">
-      <img src="./assets/photo18.jpg" alt="">
-      <img src="./assets/photo19.jpg" alt="">
-      <img src="./assets/photo20.jpg" alt="">
-      <img src="./assets/photo22.jpg" alt=""><img src="./assets/photo11.jpg" alt="">
-      <img src="./assets/photo12.jpg" alt="">
-      <img src="./assets/photo13.jpg" alt="">
-      <img src="./assets/photo14.jpg" alt="">
-      <img src="./assets/photo15.jpg" alt="">
-      <img src="./assets/photo16.jpg" alt="">
-      <img src="./assets/photo17.jpg" alt="">
-      <img src="./assets/photo18.jpg" alt="">
-      <img src="./assets/photo19.jpg" alt="">
-      <img src="./assets/photo20.jpg" alt="">
-      <img src="./assets/photo22.jpg" alt="">
-    </div>
+       <p>Copyright &#169; 2025 Hyacinthe Menuiserie. Tous droits réservés.</p>
+     </footer>
+     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-      function setDistance(selector){
-        const container = document.querySelector('.gallery-container');
-        const track = document.querySelector(selector);
-        if(!container || !track) return;
-        const distance = track.scrollWidth - container.clientWidth;
-        track.style.setProperty('--distance', distance + 'px');
-      }
-      function refresh(){
-        setDistance('.ligne1');
-        setDistance('.ligne2');
-      }
-      window.addEventListener('load', refresh);
-      window.addEventListener('resize', refresh);
+      emailjs.init({ publicKey: "9ZPxfQA3YuyIUrQ0X" });
+    </script>
+    <script>
+      // Remplace par tes identifiants EmailJS (Email Services > ton service, Email Templates > ton template)
+      const SERVICE_ID = "service_p3ueo9j";
+      const TEMPLATE_ID = "template_r0istfo";
+
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // UI: désactiver le bouton pendant l’envoi
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Envoi...";
+
+        try {
+          // Envoie automatiquement tous les champs du form (grâce aux name= du §3)
+          const res = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
+
+          // Succès: feedback + reset
+          alert("Merci ! Votre message a bien été envoyé ✅");
+          form.reset();
+        } catch (err) {
+          console.error(err);
+          alert("Oups, l'envoi a échoué. Réessayez ou contactez-moi par email.");
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        }
+      });
     </script>
 
-  </div>
-
-  <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-  />
-</section>
-
-<section id="contact">
-  <!--<p class="section__text__p1">Entrer en contact</p>-->
-  <h1 class="title">Contactez-Moi</h1>
-  <form id="contact-form" class="contact-form" action="#" method="post">
-    <div>
-      <label for="name">Nom:</label>
-      <input type="text" id="name" name="from_name" required>
-    </div>
-    <div>
-      <label for="phone">Numéro de téléphone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Facultatif">
-    </div>
-    <div>
-      <label for="email">Votre email:</label>
-      <input type="email" id="email" name="reply_to" required>
-    </div>
-    <div>
-      <label for="message">Votre message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-color-1">Envoyer</button>
-  </form>
-
-  <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-      />
-      <p><a href="mailto:webbylouis1@gmail.com">hyacinthe.menuiseries@gmail.com</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img
-              src="./assets/facebook.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-      />
-      <p><a href="https://www.facebook.com/hyacinthd.menuiseries">Facebook</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img
-              src="./assets/telephone.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-      />
-      <p>Tel : 06 11 55 06 51</p>
-    </div>
-  </div>
-</section>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  emailjs.init({ publicKey: "9ZPxfQA3YuyIUrQ0X" });
-</script>
-<script>
-  // Remplace par tes identifiants EmailJS (Email Services > ton service, Email Templates > ton template)
-  const SERVICE_ID = "service_p3ueo9j";
-  const TEMPLATE_ID = "template_r0istfo";
-
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    // UI: désactiver le bouton pendant l’envoi
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Envoi...";
-
-    try {
-      // Envoie automatiquement tous les champs du form (grâce aux name= du §3)
-      const res = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
-
-      // Succès: feedback + reset
-      alert("Merci ! Votre message a bien été envoyé ✅");
-      form.reset();
-    } catch (err) {
-      console.error(err);
-      alert("Oups, l'envoi a échoué. Réessayez ou contactez-moi par email.");
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = originalText;
-    }
-  });
-</script>
-
-</body>
-<footer>
-  <nav>
-    <div class="nav-links-container">
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#offres">Mes services</a></li>
-        <li><a href="#projects">Galerie</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <p>Copyright &#169; 2025 Hyacinthe Menuiserie. Tous droits réservés.</p>
-</footer>
-</html>
+  </body>
+ </html>

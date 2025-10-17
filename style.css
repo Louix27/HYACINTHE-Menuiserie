@@ -23,7 +23,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 p {
@@ -484,22 +483,23 @@ article .icon {
 
 /* FOOTER SECTION */
 
-footer{
-  margin-top: auto;           /* pousse le footer en bas */
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 -2px 8px rgba(0,0,0,.06);
-  padding: 18px 16px;
-  height: auto;               /* IMPORTANT : pas de 26vh */
-  margin-left: 0;             /* annule l'ancien "margin: 0 1rem" */
-  margin-right: 0;
+/* style.css */
+footer {
+  min-height: 8vh;               /* reduced height, grows if needed */
+  padding: 1rem;                 /* internal spacing instead of big vh */
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-/* (optionnel) centrer le contenu du footer */
-footer nav{ display:flex; justify-content:center; }
-footer p{ text-align:center; margin-top:8px; }
-
-
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 0.95rem;            /* slightly smaller text */
+  color: rgb(85, 85, 85);
+}
 .contact-form {
   max-width: 500px;
   margin: 1rem auto;
