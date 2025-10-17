@@ -289,5 +289,40 @@
     #desktop-nav{ display:none; }
     #hamburger-nav{ display:flex; }
   }
+  /* === CENTRAGE DU FORMULAIRE SUR MOBILE === */
+  .contact-form {
+    width: 100%;
+    max-width: 500px;         /* limite la largeur max pour garder une belle forme */
+    margin: 0 auto;           /* centre horizontalement */
+    padding: 1.5rem;          /* espace intérieur équilibré */
+    box-sizing: border-box;   /* évite le débordement du padding */
+  }
+
+  .contact-form div {
+    width: 100%;
+  }
+
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #333;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .contact-form button {
+    display: block;
+    margin: 1.5rem auto 0 auto;   /* centre le bouton */
+  }
+
 
 }
