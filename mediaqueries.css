@@ -182,10 +182,7 @@
     transition: transform .25s ease, opacity .2s ease;
   }
 
-  /* (supprime ces anciennes règles si tu les as)
-  .hamburger-btn .line + .line { margin-top: 5px; }
-  .hamburger-btn .line:nth-child(2){ width:18px; }
-  */
+
 
   /* Animation en X à l'ouverture */
   .hamburger-btn[aria-expanded="true"] .line:nth-child(1){
@@ -197,7 +194,22 @@
   .hamburger-btn[aria-expanded="true"] .line:nth-child(3){
     transform: translateY(-7px) rotate(-45deg);
   }
+  .hamburger-btn[aria-expanded="true"] {
+    position: fixed;      /* on le détache du flux normal */
+    top: 1.2rem;          /* un peu d'espace depuis le haut */
+    right: 1.2rem;        /* le colle au bord droit */
+    z-index: 1100;        /* au-dessus du menu */
+    background: #fff;     /* cercle blanc visible sur fond sombre */
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    border: none;
+    transition: transform 0.25s ease, opacity 0.25s ease, right 0.25s ease;
+  }
 
+  /* Option : effet de survol sur la croix */
+  .hamburger-btn[aria-expanded="true"]:hover {
+    background: #f3f4f6;
+    transform: scale(1.05);
+  }
 
   /* Overlay + bottom-sheet */
   .mobile-menu[hidden]{ display:none; }
