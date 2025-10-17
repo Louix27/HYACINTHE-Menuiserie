@@ -205,11 +205,7 @@
     transition: transform 0.25s ease, opacity 0.25s ease, right 0.25s ease;
   }
 
-  /* Option : effet de survol sur la croix */
-  .hamburger-btn[aria-expanded="true"]:hover {
-    background: #f3f4f6;
-    transform: scale(1.05);
-  }
+
 
   /* Overlay + bottom-sheet */
   .mobile-menu[hidden]{ display:none; }
