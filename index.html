@@ -23,21 +23,49 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">HYACINTHE Menuiseries</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
-          <li><a href="#offres" onclick="toggleMenu()">Mes services</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Galerie</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="logo">
+        <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
+      </div>
+
+      <button
+              class="hamburger-btn"
+              id="hamburgerBtn"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+              aria-label="Ouvrir le menu"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <!-- Menu mobile (bottom-sheet) -->
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <div class="mobile-backdrop" data-close></div>
+
+        <nav class="mobile-sheet" role="dialog" aria-modal="true">
+          <div class="sheet-header">
+            <div class="logo">
+              <span class="logo-yellow">HYACINTHE</span> <span class="logo-black">Menuiserie</span>
+            </div>
+            <button class="sheet-close" aria-label="Fermer" data-close>&times;</button>
+          </div>
+
+          <ul class="sheet-links">
+            <li><a href="#about"    data-close>À propos</a></li>
+            <li><a href="#offres"   data-close>Mes services</a></li>
+            <li><a href="#projects" data-close>Galerie</a></li>
+            <li><a href="#contact"  data-close>Contact</a></li>
+          </ul>
+
+          <button class="btn btn-color-1 sheet-cta" data-close onclick="location.href='#contact'">
+            Contactez-moi
+          </button>
+        </nav>
       </div>
     </nav>
+
+
     <section id="profile">
       <!--<div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Louis Palié profile picture" />
