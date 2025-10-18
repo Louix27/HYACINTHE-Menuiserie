@@ -655,3 +655,7 @@ footer p {
 @media (max-width: 900px){
   .photo-gallery img{ width: 260px; height: 200px; }
 }
+.arrow{
+  right: 1rem !important;       /* pas de valeurs négatives */
+  max-width: 40px;
+}
